@@ -10,6 +10,14 @@ A React Native app that lets you browse and search trending GitHub repositories.
 - **Favorites** - save repos you like and view them later from the header
 - **Offline support** - data gets cached to AsyncStorage when the app goes to background, and restored on next launch
 
+## 🚀 Download & Preview
+
+You don't need to build the app locally to test it! A pre-compiled Android APK is generated automatically via GitHub Actions:
+1. Go to the **Actions** tab in this GitHub repository
+2. Click on the latest workflow run (e.g. "Lint, Type Check, and Test")
+3. Scroll to the bottom to the **Artifacts** section
+4. Download the `DevPulse-release` zip file, extract the APK, and install it on your Android device/emulator
+
 ## How to run
 
 Make sure you have React Native CLI set up (Node, Android Studio / Xcode).
