@@ -19,3 +19,16 @@ export interface GithubSearchResponse {
   incomplete_results: boolean;
   items: Repository[];
 }
+
+export interface GithubUser {
+  id: number;
+  login: string;
+  avatar_url: string;
+  html_url: string;
+}
+
+export interface GithubUserSearchResponse {
+  total_count: number;
+  incomplete_results: boolean;
+  items: GithubUser[];
+}
