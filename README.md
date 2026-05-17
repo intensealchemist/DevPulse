@@ -1,4 +1,7 @@
-# DevPulse
+<div align="center">
+  <img src="docs/icon.png" width="120" style="border-radius:24px; margin-bottom:12px;" />
+  <h1>DevPulse</h1>
+</div>
 
 A React Native app that lets you browse and search trending GitHub repositories. It supports offline caching so your data sticks around even after you close the app.
 
@@ -37,7 +40,7 @@ npm run ios
 
 ## Tech decisions
 
-- **No Expo, no UI libraries** - just React Native CLI with core components like FlatList, RefreshControl, StyleSheet etc. Keeps things lightweight and shows I can work without abstractions
+- **No Expo, no UI libraries** - just React Native CLI with core components like FlatList, RefreshControl, StyleSheet etc.
 - **Redux Toolkit** for state - manages trending repos, search results and favorites in separate slices. Chose RTK over plain Redux to cut down on boilerplate
 - **Custom hooks** - `useDebounce` for search input, `useAppState` for detecting background/foreground transitions. Keeps the screen components clean
 - **Manual persistence over redux-persist** - I write to AsyncStorage explicitly when the app backgrounds instead of on every state change. Avoids unnecessary writes and keeps the JS thread free during renders
