@@ -8,8 +8,8 @@ A React Native app that lets you browse and search trending GitHub repositories.
 ## What it does
 
 - **Explore** - shows a paginated list of trending repos from the GitHub API with infinite scroll
-- **Search** - search repos with debounced input so it doesn't spam the API
-- **Details** - tap any repo to see stars, forks, issues, language etc
+- **Dual-Mode Search** - search for both dynamic repositories OR active developers/users natively via a top segment toggle (using debounced input so it doesn't spam the API)
+- **Details** - tap any repo or user to see stars, forks, issues, language, etc., or launch their external GitHub profiles
 - **Favorites** - save repos you like and view them later from the header
 - **Offline support** - data gets cached to AsyncStorage when the app goes to background, and restored on next launch
 
