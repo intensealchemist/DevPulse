@@ -57,6 +57,10 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
+      - name: Make Gradle Executable
+        working-directory: android
+        run: chmod +x gradlew
+
       - name: Build Release APK
         working-directory: android
         run: ./gradlew assembleRelease
